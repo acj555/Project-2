@@ -1,8 +1,3 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/rFfO0P
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
 CREATE TABLE "Contacts" (
     "contact_id" int   NOT NULL,
     "first_name" VARCHAR(50)   NOT NULL,
@@ -61,3 +56,14 @@ REFERENCES "Category" ("category_id");
 ALTER TABLE "Campaign" ADD CONSTRAINT "fk_Campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "Subcategory" ("subcategory_id");
 
+SELECT *
+FROM public."Campaign";
+
+SELECT *
+FROM public."Category";
+
+SELECT *
+FROM public."Contacts";
+
+SELECT *
+FROM public."Subcategory";
